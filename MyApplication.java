@@ -1,20 +1,20 @@
 //import models.Point;
 //import models.Shape;
 
-//import java.io.File;
-//import java.io.FileNotFoundException;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.*;
 
 public class MyApplication {
-    // throws FileNotFoundException
-    public static void main(String[] args) {
-//        File file = new File("C:\\Users\\admin\\IdeaProjects\\AssignmentOne\\src\\source.txt");
+//     throws FileNotFoundException
+    public static void main(String[] args) throws FileNotFoundException {
+        File file = new File("C:\\Users\\mukhy\\IdeaProjects\\Aitu-1.0\\out\\test.txt");
 //        File file =
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(file);
         Shape shape = new Shape();
-        int sz = sc.nextInt();
-        while (sz-- > 0) {
+//        int sz = sc.nextInt();
+        while (sc.hasNext()) {
             double x = sc.nextDouble();
             double y = sc.nextDouble();
 
